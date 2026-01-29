@@ -1,0 +1,15 @@
+package com.myorganisation.nexify.request;
+
+import com.myorganisation.nexify.enums.Gender;
+import com.myorganisation.nexify.enums.UserRole;
+import lombok.Data;
+
+@Data
+public class UserRequestDto {
+    private String name;
+    private String email;
+    private String username;
+    private String password;
+    private Gender gender;
+    private UserRole role;
+}
