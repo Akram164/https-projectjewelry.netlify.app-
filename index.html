@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Burger Heaven</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./responsive.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">Burger Heaven</div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="home" class="hero">
+      <h1>Welcome to Burger Heaven</h1>
+      <p>Delicious burgers made with love!</p>
+      <button onclick="orderNow()">Order Now</button>
+
+      <div class="animated-text">
+        <span>🍔</span>
+        <span>🍟</span>
+        <span>🥤</span>
+      </div>
+    </section>
+
+    <section id="menu" class="menu">
+      <h2>Our Menu</h2>
+      <div class="menu-items">
+        <!-- Menu Item 1 -->
+        <div class="menu-item">
+          <img src="./image/img-0.png" alt="Classic Burger" />
+          <h3>Classic Burger</h3>
+          <p>A juicy beef patty with fresh lettuce, tomato, and cheese.</p>
+          <p>$8.99</p>
+        </div>
+        <!-- Menu Item 2 -->
+        <div class="menu-item">
+          <img src="./image/img-1.jpg" alt="Cheeseburger" />
+          <h3>Cheeseburger</h3>
+          <p>Double beef patty with melted cheddar cheese.</p>
+          <p>$10.99</p>
+        </div>
+        <!-- Menu Item 3 -->
+        <div class="menu-item">
+          <img src="./image/img-10.jpg" alt="Veggie Burger" />
+          <h3>Veggie Burger</h3>
+          <p>A delicious plant-based patty with all the fixings.</p>
+          <p>$9.99</p>
+        </div>
+        <!-- Menu Item 4 -->
+        <div class="menu-item">
+          <img src="./image/img-11.jpg" alt="Bacon Burger" />
+          <h3>Bacon Burger</h3>
+          <p>Juicy beef patty topped with crispy bacon and cheese.</p>
+          <p>$11.99</p>
+        </div>
+        <!-- Menu Item 5 -->
+        <div class="menu-item">
+          <img src="./image/img-12.png" alt="Spicy Burger" />
+          <h3>Spicy Burger</h3>
+          <p>Beef patty with jalapeños, spicy sauce, and pepper jack cheese.</p>
+          <p>$10.99</p>
+        </div>
+        <!-- Menu Item 6 -->
+        <div class="menu-item">
+          <img src="./image/img-13.jpg" alt="Mushroom Swiss Burger" />
+          <h3>Mushroom Swiss Burger</h3>
+          <p>Beef patty with sautéed mushrooms and Swiss cheese.</p>
+          <p>$12.99</p>
+        </div>
+        <!-- Menu Item 7 -->
+        <div class="menu-item">
+          <img src="./image/img-14.jpg" alt="BBQ Burger" />
+          <h3>BBQ Burger</h3>
+          <p>Beef patty with BBQ sauce, onion rings, and cheddar cheese.</p>
+          <p>$11.99</p>
+        </div>
+        <!-- Menu Item 8 -->
+        <div class="menu-item">
+          <img src="./image/img-15.png" alt="Double Cheeseburger" />
+          <h3>Double Cheeseburger</h3>
+          <p>Two beef patties with double cheddar cheese.</p>
+          <p>$13.99</p>
+        </div>
+        <!-- Menu Item 9 -->
+        <div class="menu-item">
+          <img src="./image/img-17.jpg" alt="Chicken Burger" />
+          <h3>Chicken Burger</h3>
+          <p>Grilled chicken breast with lettuce, tomato, and mayo.</p>
+          <p>$9.99</p>
+        </div>
+        <!-- Menu Item 10 -->
+        <div class="menu-item">
+          <img src="./image/img-2.jpg" alt="Fish Burger" />
+          <h3>Fish Burger</h3>
+          <p>Crispy fish fillet with tartar sauce and lettuce.</p>
+          <p>$10.99</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h2>About Us</h2>
+      <p>
+        At Burger Heaven, we believe in serving the best burgers in town. Our
+        ingredients are fresh, and our burgers are made to order. Come and
+        experience the taste of heaven!
+      </p>
+      <p>
+        Founded in 2010, we have been delighting customers with our unique
+        recipes and friendly service. Our mission is to make every bite a
+        memorable experience.
+      </p>
+    </section>
+
+    <section id="gallery" class="gallery">
+      <h2>Gallery</h2>
+      <div class="gallery-images">
+        <img src="./image/img-3.jpg" alt="Burger Image 1" />
+        <img src="./image/img-4.jpg" alt="Burger Image 2" />
+        <img src="./image/img-5.jpg" alt="Burger Image 3" />
+        <img src="./image/img-6.jpg" alt="Burger Image 4" />
+        <img src="./image/img-7.jpg" alt="Burger Image 5" />
+        <img src="./image/img-8.jpg" alt="Burger Image 6" />
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2023 Burger Heaven. All rights reserved.</p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

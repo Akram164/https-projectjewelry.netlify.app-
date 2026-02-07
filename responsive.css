@@ -1,0 +1,72 @@
+/* Responsive Styles for Menu */
+@media (max-width: 768px) {
+    .menu-item {
+        width: calc(50% - 20px); /* 2 items per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-item {
+        width: 100%; /* 1 item per row */
+    }
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    header nav ul li {
+        margin: 0 10px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .menu-item {
+        width: 45%;
+    }
+
+    .gallery-images img {
+        width: 45%;
+    }
+
+    .about p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .menu-item {
+        width: 100%;
+    }
+
+    .gallery-images img {
+        width: 100%;
+    }
+
+    .contact form button {
+        width: 100%;
+    }
+}
