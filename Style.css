@@ -1,0 +1,17 @@
+.main-content {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+}
+
+.image-slider-container {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+}
+
+.slider-image {
+    height: 65vh;
+}
